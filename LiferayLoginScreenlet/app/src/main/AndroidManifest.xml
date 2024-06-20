@@ -12,22 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LiferayLoginScreenlet"
         tools:targetApi="31">
-
+        <activity
+            android:name=".ActivitySuccess"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- Add the following block to explicitly set android:exported for OAuth2RedirectActivity -->
+        </activity> <!-- Add the following block to explicitly set android:exported for OAuth2RedirectActivity -->
         <activity
             android:name="com.liferay.mobile.android.auth.oauth2.OAuth2RedirectActivity"
-            android:exported="true">
-        </activity>
-
+            android:exported="true"></activity>
     </application>
 
 </manifest>
